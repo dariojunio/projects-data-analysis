@@ -30,15 +30,3 @@ Exploratory analysis of the FIFA 19 dataset (10,000+ players).
 
 Download the FIFA 19 dataset on [Kaggle](https://www.kaggle.com/datasets/karangadiya/fifa19).
 
-## Structure
-
-```
-data-analysis/
-└── fifa19/
-    ├── data/
-    │   └── fifa19.csv
-    ├── notebooks/
-    │   ├── 01_exploracao.ipynb
-    │   └── ...
-    └── README.md
-```
