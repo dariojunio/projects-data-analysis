@@ -11,8 +11,8 @@ Exploratory analysis of the FIFA 19 dataset (10,000+ players).
 |---|---|
 | `01_exploracao.ipynb` | Dataset structure, null values, basic statistics |
 | `02_filtragem.ipynb` | Simple and multiple filtering by nationality, club and overall rating |
-
-
+| `03_insights.ipynb` |	Data cross-referencing, correlation analysis between attributes |
+| `04_graphics.ipynb` | Advanced visualization using matplotlib |
 ## Stack
 
 - Python 3
