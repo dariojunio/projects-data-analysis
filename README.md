@@ -66,7 +66,7 @@ how the streaming market actually works.
 |---|---|---|
 | 01 | `01_exploracao.ipynb` | Dataset structure, distributions, country and genre breakdown |
 | 02 | `02_volume_vs_consistencia.ipynb` | Total streams vs. number of songs — who dominates and how |
-| 03 | `03_dominancia_genero.ipynb` | Genre volume, efficiency and sonic profile (danceability, energy, valence) |
+| 03 | `03_generos.ipynb` | Genre volume, efficiency and sonic profile (danceability, energy, valence) |
 | 04 | `04_outliers.ipynb` | Edge cases — a 1985 song in a 2025 ranking, and what they reveal about streaming |
 
 #### Key Findings
