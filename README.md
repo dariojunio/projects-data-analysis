@@ -6,7 +6,7 @@ actionable insights using Python and pandas.
 ---
 
 <details>
-<summary><strong>FIFA 19 — Player Analysis</strong></summary>
+<summary><strong>FIFA 19 - Player Analysis</strong></summary>
 
 <br>
 
@@ -49,7 +49,7 @@ Available on [Kaggle — FIFA 19 Complete Player Dataset](https://www.kaggle.com
 ---
 
 <details>
-<summary><strong>Spotify Top 50 — 2025 Analysis</strong></summary>
+<summary><strong>Spotify Top 50 - 2025 Analysis</strong></summary>
 
 <br>
 
