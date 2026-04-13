@@ -1,4 +1,4 @@
-# Brasileirão Série A — Análise de Técnicos (2016–2025)
+# Brasileirão Série A - Análise de Técnicos (2016–2025)
 
 Análise exploratória do Campeonato Brasileiro Série A com foco no 
 desempenho e aproveitamento de técnicos ao longo de 10 temporadas.
@@ -15,7 +15,7 @@ Quais técnicos tiveram o melhor aproveitamento no Brasileirão entre
 - **Palmeiras (210)** e **Flamengo (206)** dominam em vitórias absolutas, 
   bem acima do terceiro colocado Atlético-MG (164)
 - Técnicos com 50+ jogos têm média de aproveitamento de **41.2%**, 
-  contra **34.4%** da média geral — permanência está associada a resultados
+  contra **34.4%** da média geral - permanência está associada a resultados
 - **Renato Gaúcho no Grêmio** é o caso de maior longevidade: 231 jogos 
   com 44.6% de aproveitamento
 - **Abel Ferreira no Palmeiras** combina volume (152 jogos) com o melhor 
@@ -31,4 +31,4 @@ Quais técnicos tiveram o melhor aproveitamento no Brasileirão entre
 Python · Pandas · NumPy · Matplotlib
 
 ## Dataset
-[Campeonato Brasileiro Série A — Kaggle](https://www.kaggle.com/datasets/adaoduque/campeonato-brasileiro-serie-a)
+[Campeonato Brasileiro Série A - Kaggle](https://www.kaggle.com/datasets/adaoduque/campeonato-brasileiro-serie-a)
