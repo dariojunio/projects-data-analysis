@@ -109,13 +109,6 @@ pip install -r requirements.txt
 jupyter notebook notebooks/01_exploracao.ipynb
 ```
 
-## Próximos Passos
-
-- [ ] Análise de correlação detalhada entre variáveis climáticas e produção
-- [ ] Modelagem preditiva da produtividade baseada em variáveis climáticas
-- [ ] Análise por estado individual do Sudeste
-- [ ] Inclusão de dados de eventos climáticos extremos (geadas, secas severas)
-
 ## Autor
 
 **Dário Junio**
