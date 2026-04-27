@@ -1,91 +1,116 @@
 # Impacto Climático na Produção Agrícola do Sudeste Brasileiro
 
-Análise exploratória da relação entre variáveis climáticas e produção agrícola no Sudeste do Brasil (2013-2023).
+Análise exploratória sobre a relação entre variáveis climáticas e produção agrícola no Sudeste do Brasil entre **2013 e 2023**.
+
+O projeto investiga como temperatura, precipitação e períodos de estiagem se relacionam com a produção de culturas relevantes para a região, como **café**, **cana-de-açúcar**, **laranja** e **milho**.
 
 ## Sobre o Projeto
 
-Este projeto investiga como variações climáticas (temperatura, precipitação e períodos de estiagem) afetam a produção das principais culturas agrícolas do Sudeste brasileiro: café, cana-de-açúcar, laranja e milho.
+A agricultura é diretamente influenciada por variações climáticas. No Sudeste brasileiro, mudanças em padrões de chuva, temperatura média e ocorrência de dias secos podem afetar tanto a produtividade quanto a estabilidade da produção ao longo do tempo.
 
-### Objetivos
+Este projeto busca explorar esses dados de forma visual e interpretativa, conectando indicadores climáticos com a evolução da produção agrícola regional.
 
-- Analisar a evolução da produção agrícola no Sudeste entre 2013 e 2023
-- Identificar padrões e tendências nas variáveis climáticas do período
-- Explorar possíveis correlações entre clima e produtividade agrícola
-- Gerar insights sobre a vulnerabilidade climática de diferentes culturas
+## Objetivos
 
-## Dados
+- Analisar a evolução da produção agrícola no Sudeste brasileiro entre **2013 e 2023**
+- Identificar padrões nas variáveis climáticas do período
+- Explorar a relação entre chuva, temperatura, estiagem e produção agrícola
+- Comparar o comportamento das principais culturas analisadas
+- Gerar insights sobre possíveis vulnerabilidades climáticas na produção agrícola
+
+## Dados Utilizados
 
 ### Fontes
 
-- **Produção Agrícola**: IBGE - Pesquisa Agrícola Municipal (PAM)
-- **Dados Climáticos**: 
-  - ERA5 (ECMWF) - Precipitação e CDD
-  - CRU TS (Climatic Research Unit) - Temperatura
+- **Produção Agrícola:** IBGE, Pesquisa Agrícola Municipal, PAM
+- **Dados Climáticos:**
+  - ERA5, ECMWF, para precipitação e dias secos consecutivos
+  - CRU TS, Climatic Research Unit, para temperatura média
 
-### Variáveis
+### Variáveis Agrícolas
 
-**Agrícolas:**
-- Quantidade produzida (toneladas)
-- Culturas: Café, Cana-de-açúcar, Laranja, Milho
+- Quantidade produzida, em toneladas
+- Culturas analisadas:
+  - Café
+  - Cana-de-açúcar
+  - Laranja
+  - Milho
 
-**Climáticas:**
-- Temperatura média anual (°C)
-- Precipitação total anual (mm)
-- Dias secos consecutivos - CDD (dias)
+### Variáveis Climáticas
 
-**Período**: 2013 a 2023 (11 anos)  
-**Região**: Sudeste (SP, MG, RJ, ES)
+- Temperatura média anual, em °C
+- Precipitação total anual, em mm
+- Dias secos consecutivos, CDD
+
+### Recorte da Análise
+
+- **Período:** 2013 a 2023
+- **Região:** Sudeste do Brasil
+- **Estados:** São Paulo, Minas Gerais, Rio de Janeiro e Espírito Santo
 
 ## Estrutura do Projeto
 
-```
+```text
 agricultura-clima-sudeste/
 │
 ├── data/
-│   ├── raw/                          # Dados originais (não processados)
-│   └── processed/                    # Dados limpos e consolidados
+│   ├── raw/                          # Dados originais
+│   └── processed/                    # Dados tratados e consolidados
 │       └── dataset_agricultura_clima_completo.csv
 │
 ├── notebooks/
-│   └── 01_exploracao.ipynb          # Análise exploratória inicial
+│   ├── 01_exploracao.ipynb
+│   └── 02_analise_chuva_producao_agricola_sudeste.ipynb
 │
 ├── outputs/
-│   └── figures/                      # Gráficos e visualizações
+│   └── figures/                      # Gráficos gerados nas análises
 │
 ├── README.md
 └── requirements.txt
 ```
 
+## Notebooks
+
+### 01_exploracao.ipynb
+
+Notebook inicial de análise exploratória, focado em entender a estrutura do dataset, descrever as variáveis principais e observar padrões gerais da produção agrícola e dos indicadores climáticos.
+
+### 02_analise_chuva_producao_agricola_sudeste.ipynb
+
+Notebook focado na relação entre **chuva** e **produção agrícola**, explorando como a precipitação se comporta ao longo do período e como ela pode se relacionar com diferentes culturas analisadas.
+
 ## Principais Resultados
 
 ### Produção Agrícola
 
-- **Cana-de-açúcar** domina a produção do Sudeste com mais de 5 bilhões de toneladas no período
-- **Laranja** e **Café** representam culturas importantes mas com volumes significativamente menores
-- Produção total apresenta tendência de crescimento no período analisado
+A **cana-de-açúcar** aparece como a cultura de maior volume produtivo no Sudeste, com participação muito superior às demais culturas analisadas. Esse comportamento mostra o peso da cultura na produção regional e ajuda a explicar sua influência no volume total observado.
 
-### Variabilidade Climática
+Em contraste, culturas como **café**, **laranja** e **milho** apresentam volumes menores, mas continuam relevantes para entender a diversidade agrícola da região e sua possível sensibilidade a variações climáticas.
 
-**Dias Secos Consecutivos (CDD):**
-- Média histórica: 53 dias
-- Anos extremos de seca: 2020 (62 dias) e 2017 (61 dias)
-- Aumento aparente na variabilidade climática nos últimos anos
+### Variáveis Climáticas
 
-**Temperatura:**
-- Média do período: 25,7°C
-- Variação térmica relativamente estável (amplitude de 0,5°C)
-- Ano mais quente: 2015 (26,0°C)
+Os dados climáticos mostram oscilações importantes ao longo do período. A análise considera indicadores como **temperatura média**, **precipitação total anual** e **dias secos consecutivos**, permitindo observar tanto padrões gerais quanto anos de maior pressão climática.
+
+Os períodos com maior número de dias secos consecutivos indicam possíveis momentos de estresse hídrico, especialmente relevantes para culturas mais dependentes da regularidade das chuvas.
+
+### Relação entre Chuva e Produção
+
+A análise da precipitação permite investigar se anos com maior ou menor volume de chuva coincidem com mudanças na produção agrícola. Essa relação não deve ser interpretada de forma isolada, já que produtividade também depende de fatores como tecnologia, manejo, solo, irrigação e mercado.
+
+Ainda assim, observar a chuva em conjunto com a produção ajuda a levantar hipóteses importantes sobre vulnerabilidade climática e estabilidade produtiva no Sudeste brasileiro.
 
 ## Tecnologias Utilizadas
 
 - **Python 3.x**
-- **Pandas** - Manipulação e análise de dados
-- **Matplotlib** - Visualização de dados
-- **Jupyter Notebook** - Desenvolvimento e documentação
+- **Pandas** para manipulação e análise dos dados
+- **Matplotlib** para visualização dos dados
+- **Jupyter Notebook** para desenvolvimento e documentação da análise
 
 ## Como Executar
 
 ### Pré-requisitos
+
+Instale as dependências do projeto:
 
 ```bash
 pip install -r requirements.txt
@@ -93,21 +118,32 @@ pip install -r requirements.txt
 
 ### Execução
 
-1. Clone o repositório:
+Clone o repositório:
+
 ```bash
 git clone https://github.com/seu-usuario/agricultura-clima-sudeste.git
 cd agricultura-clima-sudeste
 ```
 
-2. Instale as dependências:
-```bash
-pip install -r requirements.txt
-```
+Abra os notebooks:
 
-3. Abra o notebook:
 ```bash
 jupyter notebook notebooks/01_exploracao.ipynb
 ```
+
+ou
+
+```bash
+jupyter notebook notebooks/02_analise_chuva_producao_agricola_sudeste.ipynb
+```
+
+## Possíveis Próximos Passos
+
+- Analisar correlações entre variáveis climáticas e produção agrícola
+- Comparar os impactos climáticos por cultura
+- Investigar diferenças entre os estados do Sudeste
+- Criar modelos preditivos simples para estimar produção a partir de variáveis climáticas
+- Expandir a análise para outras regiões do Brasil
 
 ## Autor
 
@@ -121,6 +157,7 @@ Este projeto está sob a licença MIT.
 
 ## Agradecimentos
 
-- IBGE pela disponibilização dos dados de produção agrícola
-- ECMWF (ERA5) e CRU pelos dados climáticos
+- IBGE pela disponibilização dos dados da Pesquisa Agrícola Municipal
+- ECMWF pelos dados climáticos do ERA5
+- Climatic Research Unit pelos dados de temperatura do CRU TS
 - Comunidade Python de ciência de dados
